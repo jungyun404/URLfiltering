@@ -1,5 +1,13 @@
-from sklearn.datasets import load_iris # 샘플 데이터 로딩
+# Scikit-learn과 필요한 라이브러리
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import accuracy_score, confusion_matrix
+import string
+import re
 
 # load sample
 dataset = load_iris()
